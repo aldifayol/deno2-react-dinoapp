@@ -1,5 +1,5 @@
 import data from "./data.json" with { type: "json" };
 
-export async function GET() {
+export function GET() {
   return Response.json(data);
 }

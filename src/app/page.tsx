@@ -17,8 +17,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
-      <h1>Welcome to the Dinosaur app</h1>
+    <main className="text-center m-10">
+      <h1 className="text-3xl">Welcome to the Dinosaur app</h1>
       <p>Click on a dinosaur below to learn more.</p>
       <ul>
         {dinosaurs.map((dinosaur: Dino) => {

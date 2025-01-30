@@ -19,10 +19,12 @@ export default function Dinosaur({ params }: RouteParams) {
   }, []);
 
   return (
-    <main>
-      <h1>{dinosaur.name}</h1>
-      <p>{dinosaur.description}</p>
-      <Link href="/">🠠 Back to all dinosaurs</Link>
+    <main className="text-center mt-20">
+      <h1 className="mt-40 font-extrabold text-2xl">{dinosaur.name}</h1>
+      <p className="m-10 text-rose-800">{dinosaur.description}</p>
+      <Link href="/" className="mb-11">
+        🠠 Back to all dinosaurs
+      </Link>
     </main>
   );
 }

@@ -3,7 +3,7 @@ import data from "../data.json" with { type: "json" };
 
 type RouteParams = { params: Promise<{ dinosaur: string }> };
 
-export const GET = async (request: NextRequest, { params }: RouteParams) => {
+export const GET = async (_request: NextRequest, { params }: RouteParams) => {
   const { dinosaur } = await params;
 
   if (!dinosaur) {
