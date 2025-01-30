@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Dino } from './types';
-// import Link from 'next/link';
+import Link from 'next/link';
 import React from 'react';
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
         {dinosaurs.map((dinosaur: Dino) => {
           return (
             <li key={dinosaur.name}>
-              {/* <Link href={`/${dinosaur.name.toLowerCase()}`}>{dinosaur.name}</Link> */}
+              <Link href={`/${dinosaur.name.toLowerCase()}`}>{dinosaur.name}</Link>
             </li>
           );
         })}
